@@ -31,7 +31,8 @@ Setting up VS Code and Running The Application
 # Step 2: MongoDB Setup on Mac
 1. Download MongoDB Compass and connect it to VS Code.
 
-# Step 4: Running the Application
+# Step 3: Running the Application
+Open Terminal
 ```sh
 npm install
 npm run dev
