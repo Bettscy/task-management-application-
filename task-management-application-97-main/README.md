@@ -37,6 +37,11 @@ Open Terminal
 npm install
 npm run dev
 ```
+Click on any of the appearing links to open the application in your browser.
+```sh
+  ➜  Local:   http://localhost:8081/
+  ➜  Network: http://192.168.1.3:8081/
+```
 
 ## 🚀 Key Features
 
@@ -114,4 +119,5 @@ cd frontend
 npm install
 ## RUN FRONTEND:
 npm run dev
+
 
