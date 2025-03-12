@@ -10,7 +10,7 @@ To build a full-stack application using **Next.js (Frontend), NestJS (Backend), 
 
 Setting up VS Code and Running The Application
 
-```sh
+
 # Step 1: VS Cose Setup
 1. Install Visual Studio Code if you haven't already from "code.visualstudio.com"
 
@@ -26,6 +26,7 @@ Setting up VS Code and Running The Application
 1. Download MongoDB Compass and connect it to VS Code.
 
 # Step 4: Running the Application
+```sh
 npm install
 npm run dev
 ```
