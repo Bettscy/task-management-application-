@@ -14,13 +14,13 @@ Setting up VS Code and Running The Application
 # Step 1: VS Cose Setup
 1. Install Visual Studio Code if you haven't already from "code.visualstudio.com"
 
-2: Install recommended extensions:
-### -> JavaScript and TypeScript support: "JavaScript and TypeScript Nighter" by Microsoft
-### -> React support: "ES7+ React/Redux/React-Native snippets"
--> MongoDB: "MongoDB for VS Code"
--> REST Client: "REST Client" (for testing your API endpoints)
--> ESLint: "ESLint" (for code linting)
--> Prettier: "Prettier - Code formatter" (for consistent formatting)
+2. Install recommended extensions:
+## JavaScript and TypeScript support: "JavaScript and TypeScript Nighter" by Microsoft.
+## React support: "ES7+ React/Redux/React-Native snippets".
+MongoDB: "MongoDB for VS Code".
+REST Client: "REST Client" (for testing your API endpoints).
+ESLint: "ESLint" (for code linting).
+Prettier: "Prettier - Code formatter" (for consistent formatting).
 
 # Step 2: MongoDB Setup on Mac
 1. Download MongoDB Compass and connect it to VS Code.
