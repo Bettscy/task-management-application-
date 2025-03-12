@@ -1,69 +1,109 @@
-# Welcome to your Lovable project
+# Welcome to my project- TASK MANAGEMENT APPLICATION
+
+## Overview
+A web-based task management application where users can create, view, update, and delete tasks.
+
+## 🎯 Objective
+To build a full-stack application using **Next.js (Frontend), NestJS (Backend), and MongoDB (Database)** with **Redux Toolkit for state management** and **Jest for testing**.
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/db09397a-fd62-4938-8f73-15d1e602c225
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/db09397a-fd62-4938-8f73-15d1e602c225) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Setting up VS Code and Running The Application
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: VS Cose Setup
+1. Install Visual Studio Code if you haven't already from code.visualstudio.com
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2: Install recommended extensions:
+-> JavaScript and TypeScript support: "JavaScript and TypeScript Nighter" by Microsoft
+-> React support: "ES7+ React/Redux/React-Native snippets"
+-> MongoDB: "MongoDB for VS Code"
+-> REST Client: "REST Client" (for testing your API endpoints)
+-> ESLint: "ESLint" (for code linting)
+-> Prettier: "Prettier - Code formatter" (for consistent formatting)
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 2: MongoDB Setup on Mac
+1. Download MongoDB Compass and connect it to VS Code.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Running the Application
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Key Features
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### **Frontend (Next.js + Redux Toolkit)**
+✅ **Responsive UI** with the following pages:
+- 🏠 **Home Page**: Displays a list of tasks (title & status).
+- 📄 **Task Detail Page**: Shows task details (title, description, status).
+- 🆕 **New Task Page**: Form to create a new task.
+- ✏️ **Edit Task Page**: Form to update an existing task.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### **Backend (NestJS + MongoDB)**
+✅ **REST API Endpoints**:
+- `POST /tasks` → Create a new task.
+- `GET /tasks` → Fetch all tasks.
+- `GET /tasks/:id` → Fetch a single task.
+- `PUT /tasks/:id` → Update a task.
+- `DELETE /tasks/:id` → Delete a task.
 
-## What technologies are used for this project?
+✅ **MongoDB Integration**:
+- Uses **Mongoose** to interact with MongoDB.
+- Defines a `Task` schema with:
+  - `id`: Unique identifier.
+  - `title`: Task title (required).
+  - `description`: Task details (required).
+  - `status`: Task status (`pending`, `in-progress`, `completed`).
 
-This project is built with .
+✅ **Validation & Error Handling**:
+- Uses **DTOs & class-validator** for input validation.
+- Returns **404 error** for missing tasks.
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🧪 Testing
+✅ **Unit & Integration Tests using Jest**:
+- Backend: Tests service functions (create, update, delete tasks).
+- Frontend:
+  - Component testing (task form, task list).
+  - Redux slice & async thunk tests.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/db09397a-fd62-4938-8f73-15d1e602c225) and click on Share -> Publish.
+## 🛠️ Tech Stack
+- **Frontend**: Next.js, Redux Toolkit, Axios
+- **Backend**: NestJS, MongoDB, Mongoose
+- **Testing**: Jest
+- **Language**: TypeScript
+- **DevOps**: Docker (optional for containers)
 
-## I want to use a custom domain - is that possible?
+---
+## 🎁 Bonus Features Asked
+✨ **Pagination** for task list.  
+🔍 **Search & filter** tasks by title/status.  
+🐳 **Docker support** for frontend, backend, and MongoDB. 
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🎁 Additional Features Added to the Bonus Features
+✨ **Dark/light theme** with a toggle button in the header.  
+📌 **Multiple view options**: List, Grid, Kanban, and Calendar.  
+🎤 **Voice input** support for adding tasks using the browser's Speech Recognition API.  
+📊 **Drag-and-drop Kanban boards** for visual task management.  
+📱 **Responsive design** that adapts to all screen sizes.  
+🎭 **Microinteractions and animations** for better UX using Framer Motion.  
+♿ **Accessibility improvements** with ARIA labels and keyboard navigation.  
+
+# Backend Setup (NestJS)
+## Open terminal.
+cd backend
+npm install
+
+Run Backend:
+npm run start:dev
+
+# Frontend Setup (Next.js)
+cd frontend
+npm install
+## RUN FRONTEND:
+npm run dev
+
