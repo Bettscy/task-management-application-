@@ -1,7 +1,7 @@
 # Welcome to my project- TASK MANAGEMENT APPLICATION
 
 ## Overview
-A web-based task management application where users can create, view, update, and delete tasks.
+A Fullstack-based task management application where users can create, view, update, and delete tasks.
 
 ## 🎯 Objective
 To build a full-stack application using **Next.js (Frontend), NestJS (Backend), and MongoDB (Database)** with **Redux Toolkit for state management** and **Jest for testing**.
