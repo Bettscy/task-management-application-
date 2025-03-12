@@ -108,16 +108,21 @@ Click on any of the appearing links to open the application in your browser.
 
 # Backend Setup (NestJS)
 ## Open terminal.
+```sh
 cd backend
 npm install
-
+```
 Run Backend:
+```sh
 npm run start:dev
-
+```
 # Frontend Setup (Next.js)
+```sh
 cd frontend
 npm install
+```
 ## RUN FRONTEND:
+```sh
 npm run dev
-
+<img width="1440" alt="Screenshot 2025-03-13 at 1 08 44 AM" src="https://github.com/user-attachments/assets/2987acb9-f502-4d9f-8722-abb219b52fbc" />
 
